@@ -33,7 +33,8 @@ app.post("/verify",(req,res)=>{
         }
     }
     */
-
+    const token_api = process.env.TOKEN_API;
+    console.log('Token API:', token_api);  
     const axios = require('axios');
     let data = JSON.stringify({
     "messaging_product": "whatsapp",
