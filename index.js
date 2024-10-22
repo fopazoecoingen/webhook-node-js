@@ -58,6 +58,8 @@ app.post("/verify",(req,res)=>{
     data : data
     };
 
+
+    console.log("Tiene que enviarme el mensaje")
     axios.request(config)
     .then((response) => {
     console.log(JSON.stringify(response.data));
@@ -66,6 +68,7 @@ app.post("/verify",(req,res)=>{
     console.log(error);
     });
 
+    
     res.json(req.body);
 })
 
